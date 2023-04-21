@@ -4,10 +4,10 @@
 	font-size: 16px;
 	line-height: 19px;
 	text-align: center;
-	color: #FFFFFF;
+	color: var(--white);
 	border-radius: 8px;
 	border: none;
-	padding: 15px 61px;
+	padding: 15px 56px 14px;
 
 	cursor: pointer; 
 }
@@ -38,7 +38,7 @@
 	border: 1px var(--black) solid;
 }
 
-.button_disabled
+.button:disabled
 {
 	pointer-events: none;
     opacity: 0.5;
