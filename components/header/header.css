@@ -1,7 +1,9 @@
 .header {
-	display: block;
-	padding-top: 6rem;
-	padding-left: 10rem;
+
+	padding-top: 96px;
+	padding-left: 160px;
+	padding-bottom: 77px;
+
 }
 
 .header__title {
@@ -10,4 +12,5 @@
 	font-weight: 500;
 	line-height: 4rem;
 	letter-spacing: 0rem;
+	margin: 0;
 }
