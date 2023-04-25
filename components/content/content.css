@@ -1,0 +1,12 @@
+.content {
+	padding-top: 68px;
+	padding-bottom: 204px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+
+	background: #F9FAFC;
+
+}

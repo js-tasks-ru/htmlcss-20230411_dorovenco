@@ -1,0 +1,20 @@
+.page {
+	color: var(--black);
+	font-family: Inter;	
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+}
+
+.page__header {
+	
+}
+
+.page__content {
+
+  
+}
+
+.page__footer {
+
+}
