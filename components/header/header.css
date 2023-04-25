@@ -1,0 +1,13 @@
+.header {
+	display: block;
+	padding-top: 6rem;
+	padding-left: 10rem;
+}
+
+.header__title {
+	font-family: Inter;
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 4rem;
+	letter-spacing: 0rem;
+}
