@@ -1,14 +1,7 @@
 .histogram {
-	display: flex;
-	flex-grow: 1;
-	flex-direction: column;
-	justify-content: space-between;
-
 	border: 1px solid var(--grey-3);
 	border-radius: 8px;
-	padding: 24px;
-
-	min-height: 185px;
+	padding: 16px 24px 24px;
 }
 
 .histogram__header {
@@ -17,11 +10,8 @@
 	align-items: flex-start;
 }
 
-.total-orders {
 
-}
-
-.total-orders__header {
+.histogram__total-orders {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
@@ -34,7 +24,7 @@
 
 }
 
-.total-orders__count {
+.histogram__count {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
@@ -43,37 +33,32 @@
 	margin: 0;
 }
 
-.view-all-link {
+.histogram__link {
+	text-decoration-line: none;
 	font-family: 'Inter';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
-	text-align: right;
 	color: var(--primary);
-
 }
 
 .histogram__content {
     display: flex;
 	gap: 1px;
-
+	height: 50px;
 }
 
 .histogram__element {
 	align-self: flex-end;	
 	background-color: var(--primary);
-	height: 50px;
-	min-width: 9px;	
+	height: 100%;
+	flex-basis: 9px;	
 	flex-grow: 1;
 }
 
 
 .histogram__element_mid {
-	height: 50%; 
+	height: 50%; 	
 }
 
 .histogram__element_low {
 	height: 25%;
-
 }
