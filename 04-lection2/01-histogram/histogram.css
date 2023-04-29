@@ -49,7 +49,7 @@
 .histogram__element {
 	align-self: flex-end;	
 	background-color: var(--primary);
-	height: 100%;
+	height: 0%;
 	flex-basis: 9px;	
 	flex-grow: 1;
 }
@@ -61,4 +61,8 @@
 
 .histogram__element_low {
 	height: 25%;
+}
+
+.histogram__element_max {
+	height: 100%;
 }
