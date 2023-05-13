@@ -36,10 +36,6 @@
 
 } 
 
-.tooltip__trigger {
-	background-image: url(./../../assets/images/help.svg);
-}
-
 .tooltip__trigger:hover ~ .tooltip__bubble {
 	display: block;
 }
