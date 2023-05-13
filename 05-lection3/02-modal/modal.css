@@ -42,8 +42,8 @@
 }
 .modal__cross {
 	position: absolute;
-	left: 480px;
-	top: 0px;
+	right: -15px;
+	top: 0;
 	transform: translate(-30px, 15px);
 	background-image: url(./../../assets/images/cross.svg);
 	background-repeat: no-repeat;
