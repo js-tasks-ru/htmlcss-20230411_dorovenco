@@ -23,6 +23,7 @@
 }
 
 .form__input {
+    min-height: 56px;
     padding-left: 24px;
     flex-grow: 1;
     box-sizing: border-box;
