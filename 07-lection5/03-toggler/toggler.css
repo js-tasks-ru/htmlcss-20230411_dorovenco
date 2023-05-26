@@ -1,4 +1,7 @@
-.toggler {}
+.toggler {
+    display: inline-flex; 
+    position: relative;
+}
 
 .toggler_preview .toggler__title {
     font-size: 14px;
@@ -29,7 +32,7 @@
 }
 
 .toggler__icon {
-    fill: var(--grey-3);
+    color: var(--grey-3);
 }
 
 .toggler__title {
@@ -47,12 +50,12 @@
 }
 
 .toggler__input:checked~.toggler__state .toggler__icon {
-    fill: var(--white);
+    color: var(--white);
     transform: translateX(26px);
 }
 
 .toggler__input:visited~.toggler__state .toggler__icon {
-    fill: var(--grey-3);
+    color: var(--grey-3);
     transform: translateX(-26px);
 }
 
@@ -65,7 +68,7 @@
 }
 
 .toggler__input:disabled~.toggler__state .toggler__icon {
-    fill: var(--grey-3);
+    color: var(--grey-3);
 }
 
 .toggler__input:disabled~.toggler__state .toggler__title {
