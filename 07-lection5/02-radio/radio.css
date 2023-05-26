@@ -1,4 +1,7 @@
-.radio {}
+.radio {
+    display: inline-flex; 
+    position: relative;
+}
 
 .radio_preview .radio__title {
     font-size: 14px;
