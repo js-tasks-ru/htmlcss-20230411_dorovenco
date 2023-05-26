@@ -29,7 +29,7 @@
 }
 
 .checkbox__icon {
-    fill: var(--white);
+    color: var(--white);
     height: 20px;
 }
 
