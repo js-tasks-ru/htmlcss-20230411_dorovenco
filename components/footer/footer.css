@@ -26,7 +26,7 @@
     grid-column: 1 / 3;
 }
 
-.footer__title_inner {
+.footer_inner .footer__title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
