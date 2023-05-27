@@ -13,6 +13,7 @@
 }
 
 .footer__description {
+    margin: 0;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -35,4 +36,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--grey-3);
+}
+
+@media only screen and (max-width: 377px) {
+    .footer {
+        display: none;
+    }
+
 }

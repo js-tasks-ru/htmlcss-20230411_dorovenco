@@ -30,7 +30,7 @@
 	font-size: 16px;
 	line-height: 24px;
 
-	display: block;
+	display: flex;
 
 	cursor: pointer;
 }
@@ -43,6 +43,13 @@
 	font-size: 16px;
 	line-height: 24px;
 
+}
+
+.accordion__icon {
+}
+
+.accordion__item[open] .accordion__icon {
+    transform: rotateZ(90deg);
 }
 
 
