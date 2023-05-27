@@ -4,6 +4,7 @@
 @import '../../components/footer/footer.css';
 @import '../../components/header/header.css';
 @import '../../components/card/card.css';
+@import '../../components/button/button.css';
 
 
 :root {
@@ -32,4 +33,3 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
-
