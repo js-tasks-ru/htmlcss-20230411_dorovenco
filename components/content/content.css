@@ -6,8 +6,18 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	flex-grow: 1;	
 	gap: 30px;
 
 	background: #F9FAFC;
 
 }
+
+@media only screen and (max-width: 376px) {
+ .content {
+    gap: 16px;
+    padding-top: 0;
+    padding-bottom: 133px;
+  }
+}
+

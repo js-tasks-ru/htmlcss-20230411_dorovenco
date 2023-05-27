@@ -4,6 +4,7 @@
 	font-family: Inter;	
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	max-width: 1440px;
 }
 
@@ -18,6 +19,7 @@
 
 .page__footer {
 
+	width: 480px;
 }
 	color: #212429;
 	font-family: Inter;	
