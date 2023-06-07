@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
 
-    </body>
+<head>
+    <link rel="stylesheet" href="../../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="./burger-menu.css">
+    <meta charset="uff-8" />
+    <title>Burger-menu</title>
+</head>
+
+<body>
+    <a id="burger-menu-open">
+        <svg class="burger-menu__open-icon" fill="currentColor">
+            <use href="../../assets/images/sprite.svg#menu"></use>
+        </svg>
+    </a>
+    <div class="burger-menu" id="burger-menu">
+        <div class="burger-menu__header">
+            <a class="burger-menu__close" id="burger-menu-close">
+                <svg class="burger-menu__close-icon" fill="currentColor">
+                    <use href="../../assets/images/sprite.svg#cross"></use>
+                </svg>
+            </a>
+            <svg class="burger-menu__logo" height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <path d="m0 1h30v30h-30z"></path>
+                    <rect height="32" rx="16" width="32" x="38"></rect>
+                    <path d="m78 0 32 32h-32z"></path>
+                </g>
+            </svg>
+        </div>
+        <div class="burger-menu__mode">
+            <p>Dark mode</p>
+            <label class="toggler">
+                <input type="checkbox" class="toggler__input">
+                <div class="toggler__state">
+                    <div class="toggler__control">
+                        <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                            <rect width="24" height="24" rx="12" />
+                        </svg>
+                    </div>
+                </diV>
+            </label>
+        </div>
+        <div class="burger-menu__content">
+            <div class="sidebar__menu">
+                <h4 class="sidebar__title burger-menu__title">Components</h4>
+                <li class="sidebar__nav-item">Modal</li>
+                <li class="sidebar__nav-item">Tooltip</li>
+                <li class="sidebar__nav-item">Avatar</li>
+                <li class="sidebar__nav-item">Calendar</li>
+                <li class="sidebar__nav-item sidebar__nav-item_active">Histogram</li>
+                <li class="sidebar__nav-item">Custom form elements</li>
+                <li class="sidebar__nav-item">Main page</li>
+            </div>
+        </div>
+    </div>
+</body>
+<script defer src="./burger-menu.js"></script>
+
 </html>
