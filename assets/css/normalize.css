@@ -347,3 +347,11 @@
   [hidden] {
     display: none;
   }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
