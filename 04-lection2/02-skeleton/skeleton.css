@@ -32,16 +32,19 @@
 .skeleton__item {
     height: 20px;
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    background-size: 200% 200%;
+    animation: gradient 2s ease forwards infinite;
 }
 
 .skeleton__item_round {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: var(--grey-2);
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
     margin-right: 16px;
-    /*flex-grow: 0.1;*/
     flex-shrink: 0;
+    background-size: 200% 200%;
+    animation: gradient 2s ease forwards infinite;
 }
 
 .skeleton__item_halfe {
@@ -50,4 +53,24 @@
 
 .skeleton__item_quarter {
     width: 25%;
+}
+
+@keyframes gradient {
+    from {
+        background-position: 100%;
+        background-position-x: 100%;
+        background-position-y: center;
+    }
+
+    100% {
+        background-position: -100%;
+        background-position-x: -100%;
+        background-position-y: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .skeleton {
+        padding: 12px 20px 16px 12px;
+    }
 }
