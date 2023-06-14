@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/normalize.css">
+    <link rel="stylesheet" href="./../assets/css/main.css">
+    <link rel="stylesheet" href="./../assets/css/paraiso-dark.css">
+</head>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">
+                    <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="m0 1h30v30h-30z"></path>
+                            <rect height="32" rx="16" width="32" x="38"></rect>
+                            <path d="m78 0 32 32h-32z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__toggler">
+                <label class="toggler">
+                    <input type="checkbox" class="toggler__input" id="theme-changer">w
+                    <diV class="toggler__state">
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#sun"></use>
+                        </svg>
+                        <div class="toggler__control">
+                            <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <rect width="24" height="24" rx="12" />
+                            </svg>
+                        </div>
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#moon"></use>
+                        </svg>
+                    </div>
+                </label>
+                </rect>
+        </header>
+        <main class="content content_grid-container">
+            <div class="sidebar">
+                <ul class="sidebar__menu">
+                    <h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link sidebar__nav-item_active" href="/pages/modal.html" class="sidebar__nav-link">Modal</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/tooltip.html" class="sidebar__nav-link">Tooltip</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/avatar.html" class="sidebar__nav-link">Avatar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/calendar.html" class="sidebar__nav-link">Calendar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/histogram.html" class="sidebar__nav-link">Histogram</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/form.html" class="sidebar__nav-link">Custom form elements</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/" class="sidebar__nav-link">Main page</a></li>
+                </ul>
+            </div>
+            <div class="content__inner">
+                <h1>Modal</h1>
+                <div class="modal" id="modal">
+                    <div class="modal__container">
+                        <a class="modal__close">
+                            <svg class="modal__cross" id="modal-close" width="30" height="30" viewBox="0 0 30 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <use href="../../assets/images/sprite.svg#cross"></use>
+                            </svg>
+                        </a>
+                        <h2 class="modal__title">Modal title</h2>
+                        <p class="modal__content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <button class="button button_primary" id="modal-open">Basic CSS-Only Modal</button>
+           
+                <div class="tabs">
+                    <div class="tabs__buttons">
+                        <button class="tab__link active" onclick="openTab(event, 'html')" id="defaultOpen">HTML</button>
+                        <button class="tab__link" onclick="openTab(event, 'css')" id="defaultOpen">CSS</button>
+                    </div>
+                    <div class="tabs__content">
+                        <div id="html" class="tab__element">
+                            <pre>
+                                <code data-language="html">
+<div class="modal" id="_modal">
+        <div class="modal__container">
+            <a class="modal__close">
+                <svg class="modal__cross" 
+                id="modal-close" 
+                width="30" 
+                height="30" 
+                viewBox="0 0 30 15" 
+                fill="currentColor" 
+                xmlns="http://www.w3.org/2000/svg">
+                    <use href="../../assets/images/sprite.svg#cross"></use>
+                </svg>
+            </a>
+            <h2 class="modal__title">Modal title</h2>
+            <p class="modal__content">Amet minim mollit non 
+            deserunt ullamco est sit aliqua dolor do amet sint. 
+        Velit officia consequat duis enim velit mollit. Exercitation 
+    veniam consequat sunt nostrud amet. Amet minim mollit non deserunt 
+ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </div>
+    <button class="button button_primary" id="modal-open">Basic CSS-Only Modal</button>
+
+                                </code>
+                            </pre>
+                        </div>
+                        <div id="css" class="tab__element">
+                            <pre>
+                                <code data-language="css">
+.modal {
+    font-family: 'Inter';
+    font-style: normal;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(196, 196, 196, 0.5);
+    max-width: 100vw;
+    height: 100vh;
+    display: none;
+}
+.modal__container {
+    max-width: 400px; 
+    width: 100%;
+    padding: 30px 40px 30px 40px;
+    position: absolute;
+    background: var(--white);
+    border-radius: 8px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+}
+.modal__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #334D6E;
+}
+.modal__content {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+
+}
+.modal__cross {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    transform: translate(-30px, 15px);
+}
+
+.modal__window_type_preview {
+    position: relative;
+    transform: none;
+    flex: 1 0 auto;
+    max-width: 200px;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--grey-3);
+    pointer-events: none;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.modal__window_type_preview input {
+    min-height: 1.5em;
+}
+
+.modal__window_type_preview .button {
+    height: 2rem;
+    padding: .375rem 1rem;
+    margin-top: 0.7em;
+    max-width: 50%;
+}
+                                </code> 
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer_inner">
+            <h5 class="footer__title">Reusable component library</h5>
+        </footer>
+        </div>
+        <script src="./../assets/js/rainbow-custom.min.js"></script>
+        <script src="./../assets/js/modal.js"></script>
+        <script type="text/javascript">
+        function openTab(evt, tabName) {
+            var i, tabElement, tabLinks;
+
+            tabElement = document.getElementsByClassName("tab__element");
+
+            for (i = 0; i < tabElement.length; i++) {
+                tabElement[i].style.display = "none";
+            }
+
+            tabLinks = document.getElementsByClassName("tab__link");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script src="./../assets/js/theme-changer.js"></script>
+</body>
+
+</html>
