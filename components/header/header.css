@@ -1,39 +1,19 @@
 .header {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0;
 
-    padding-top: 96px;
-    padding-left: 160px;
-    padding-bottom: 77px;
+	max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    /*padding: 0 16px*/
 }
 
 .header__title {
-    font-family: Inter;
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 4rem;
-    letter-spacing: 0rem;
-    margin: 0;
-}
-
-@media only screen and (max-width: 377px) {
-    .header {
-
-        padding-top: 16px;
-        padding-left: 16px;
-        padding-bottom: 69px;
-        border-bottom: 1px var(--grey-2) solid;
-    }
-
-    .header__logo {
-        text-align: center;
-    }
-
-    .header__title {
-        margin-top: 49px; 
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 38px;
-        color: var(--grey-4);
-    }
+	font-family: Inter;
+	font-size: 3rem;
+	font-weight: 500;
+	line-height: 4rem;
+	letter-spacing: 0rem;
+	margin: 0;
 }

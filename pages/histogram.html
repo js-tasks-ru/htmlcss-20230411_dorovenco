@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/normalize.css">
+    <link rel="stylesheet" href="./../assets/css/main.css">
+    <link rel="stylesheet" href="./../assets/css/paraiso-dark.css">
+</head>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">
+                    <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="m0 1h30v30h-30z"></path>
+                            <rect height="32" rx="16" width="32" x="38"></rect>
+                            <path d="m78 0 32 32h-32z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__toggler">
+                <label class="toggler">
+                    <input type="checkbox" class="toggler__input">
+                    <diV class="toggler__state">
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#sun"></use>
+                        </svg>
+                        <div class="toggler__control">
+                            <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <rect width="24" height="24" rx="12" />
+                            </svg>
+                        </div>
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#moon"></use>
+                        </svg>
+                    </div>
+                </label>
+                </rect>
+        </header>
+        <main class="content content_grid-container">
+            <div class="sidebar">
+                <ul class="sidebar__menu">
+                    <h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/modal.html" class="sidebar__nav-link">Modal</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/tooltip.html" class="sidebar__nav-link">Tooltip</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/avatar.html" class="sidebar__nav-link">Avatar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/calendar.html" class="sidebar__nav-link">Calendar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link sidebar__nav-item_active" href="/pages/histogram.html" class="sidebar__nav-link">Histogram</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/form.html" class="sidebar__nav-link">Custom form elements</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/" class="sidebar__nav-link">Main page</a></li>
+                </ul>
+            </div>
+            <div class="content__inner content">
+                <h1>Histogram</h1>
+                <div class="histogram">
+                    <div class="histogram__header">
+                        <div>
+                            <p class="histogram__total-orders">Total orders</p>
+                            <h4 class="histogram__count">50254</h4>
+                        </div>
+                        <a class="histogram__link" href="#">View all</a>
+                    </div>
+                    <div class="histogram__content">
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_max"></div>
+                        <div class="histogram__element histogram__element_mid"></div>
+                        <div class="histogram__element histogram__element_low"></div>
+                    </div>
+                </div>
+            
+            <div class="tabs">
+                <div class="tabs__buttons">
+                    <button class="tab__link active" onclick="openTab(event, 'html')" id="defaultOpen">HTML</button>
+                    <button class="tab__link" onclick="openTab(event, 'css')" id="defaultOpen">CSS</button>
+                </div>
+                <div class="tabs__content">
+                    <div id="html" class="tab__element">
+                        <pre>
+                                <code data-language="html">
+<div class="histogram">
+        <div class="histogram__header">
+            <div>
+                <p class="histogram__total-orders">Total orders</p>
+                <h4 class="histogram__count">50254</h4>
+            </div>
+            <a class="histogram__link" href="#">View all</a>
+        </div>
+        <div class="histogram__content">
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_max"></div>
+            <div class="histogram__element histogram__element_mid"></div>
+            <div class="histogram__element histogram__element_low"></div>
+        </div>
+    </div>
+</div>
+                                </code></pre>
+                    </div>
+                    <div id="css" class="tab__element">
+                        <pre>
+                                <code data-language="css">
+.histogram {
+    width: 100%;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 16px 24px 24px;
+}
+
+.histogram__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.histogram__total-orders {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    opacity: 0.8;
+    margin: 0;
+    padding-bottom: 6px;
+
+}
+
+.histogram__count {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.histogram__link {
+    text-decoration-line: none;
+    font-family: 'Inter';
+    font-style: normal;
+    color: var(--primary);
+}
+
+.histogram__content {
+    display: flex;
+    gap: 1px;
+    height: 50px;
+    animation: rising 0.5s ease-out;
+}
+
+.histogram__element {
+    align-self: flex-end;   
+    background-color: var(--primary);
+    height: 0%;
+    flex-basis: 9px;    
+    flex-grow: 1;
+    
+}
+
+@keyframes rising {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    50% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+    }
+}
+
+.histogram__element_mid {
+    height: 50%;    
+}
+
+.histogram__element_low {
+    height: 25%;
+}
+
+.histogram__element_max {
+    height: 100%;
+}
+                                </code> 
+                            </pre>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    </div>
+    </main>
+    <footer class="footer_inner">
+        <h5 class="footer__title">Reusable component library</h5>
+    </footer>
+    </div>
+    <script src="./../assets/js/rainbow-custom.min.js"></script>
+    <script type="text/javascript">
+    function openTab(evt, tabName) {
+        var i, tabElement, tabLinks;
+
+        tabElement = document.getElementsByClassName("tab__element");
+
+        for (i = 0; i < tabElement.length; i++) {
+            tabElement[i].style.display = "none";
+        }
+
+        tabLinks = document.getElementsByClassName("tab__link");
+        for (i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

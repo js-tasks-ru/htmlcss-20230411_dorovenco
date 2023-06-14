@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../assets/css/normalize.css">
     <link rel="stylesheet" href="./../assets/css/main.css">
+    <link rel="stylesheet" href="./../assets/css/paraiso-dark.css">
+</head>
 </head>
 
 <body>
@@ -49,7 +51,7 @@
                     <li class="sidebar__nav-item">
                         <a class="sidebar__nav-link" href="/pages/tooltip.html" class="sidebar__nav-link">Tooltip</a></li>
                     <li class="sidebar__nav-item">
-                        <a class="sidebar__nav-link" href="/pages/avatar.html" class="sidebar__nav-link">Avatar</a></li>
+                        <a class="sidebar__nav-link sidebar__nav-item_active" href="/pages/avatar.html" class="sidebar__nav-link">Avatar</a></li>
                     <li class="sidebar__nav-item">
                         <a class="sidebar__nav-link" href="/pages/calendar.html" class="sidebar__nav-link">Calendar</a></li>
                     <li class="sidebar__nav-item">
@@ -60,8 +62,45 @@
                         <a class="sidebar__nav-link" href="/" class="sidebar__nav-link">Main page</a></li>
                 </ul>
             </div>
-            <div class="content__inner">
-                <div class="content">
+            <div class="content__inner content">
+                <h1>Avatar</h1>
+                <div class="avatar">
+                                    <img class="avatar__img" src="./../assets/images/avatar-200.jpg">
+                                </div>
+                    <div class="tabs">
+                        <div class="tabs__buttons">
+                            <button class="tab__link active" onclick="openTab(event, 'html')" id="defaultOpen">HTML</button>
+                            <button class="tab__link" onclick="openTab(event, 'css')" id="defaultOpen">CSS</button>
+                        </div>
+                        <div class="tabs__content">
+                            <div id="html" class="tab__element">
+                                <pre>
+                                <code data-language="html">
+<div class="avatar">
+    <img class="avatar__img" src="./../assets/images/avatar-200.jpg">
+</div>
+                            </div>
+                                </code></pre>
+                            </div>
+                            <div id="css" class="tab__element">
+                                <pre>
+                                <code data-language="css">
+.avatar {
+    width: 200px;
+    height: 200px;
+}
+
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}                               </code> 
+                            </pre>
+                        </div>
+                    </div>
+                    
+                </div>
                 </div>
             </div>
         </main>
@@ -69,6 +108,26 @@
             <h5 class="footer__title">Reusable component library</h5>
         </footer>
         </div>
+        <script src="./../assets/js/rainbow-custom.min.js"></script>
+        <script type="text/javascript">
+        function openTab(evt, tabName) {
+            var i, tabElement, tabLinks;
+
+            tabElement = document.getElementsByClassName("tab__element");
+
+            for (i = 0; i < tabElement.length; i++) {
+                tabElement[i].style.display = "none";
+            }
+
+            tabLinks = document.getElementsByClassName("tab__link");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        </script>
 </body>
 
 </html>
