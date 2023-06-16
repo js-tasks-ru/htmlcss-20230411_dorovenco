@@ -60,11 +60,7 @@
     border-radius: 8px;
 }
 
-.modal__window_type_preview input {
-    min-height: 1.5em;
-}
-
-.modal__window_type_preview .button {
+.modal__preview-button {
     height: 2rem;
     padding: .375rem 1rem;
     margin-top: 0.7em;
