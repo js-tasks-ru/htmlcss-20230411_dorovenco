@@ -348,6 +348,7 @@
     display: none;
   }
 
+<<<<<<< HEAD
   h4 {
     margin: 0;
   }
@@ -355,3 +356,8 @@
   p {
     margin: 0;
   }
+=======
+  h1, ul {
+    margin: 0;
+}
+>>>>>>> 9966ffd1b64321f458b61c4d0d192722f5a34475

@@ -1,5 +1,8 @@
 .histogram {
+<<<<<<< HEAD
 	width: 100%;
+=======
+>>>>>>> 9966ffd1b64321f458b61c4d0d192722f5a34475
 	border: 1px solid var(--grey-3);
 	border-radius: 8px;
 	padding: 16px 24px 24px;
@@ -45,7 +48,10 @@
     display: flex;
 	gap: 1px;
 	height: 50px;
+<<<<<<< HEAD
 	animation: rising 0.5s ease-out;
+=======
+>>>>>>> 9966ffd1b64321f458b61c4d0d192722f5a34475
 }
 
 .histogram__element {
@@ -54,6 +60,7 @@
 	height: 0%;
 	flex-basis: 9px;	
 	flex-grow: 1;
+<<<<<<< HEAD
 	
 }
 
@@ -71,6 +78,10 @@
         transform-origin: bottom center;
     }
 }
+=======
+}
+
+>>>>>>> 9966ffd1b64321f458b61c4d0d192722f5a34475
 
 .histogram__element_mid {
 	height: 50%; 	
