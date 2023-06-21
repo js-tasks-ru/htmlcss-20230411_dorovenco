@@ -5,9 +5,7 @@
 @import '../../components/footer/footer.css';
 @import '../../components/header/header.css';
 @import '../../components/card/card.css';
-@import '../../components/histogram/histogram.css';
 @import '../../components/button/button.css';
-<<<<<<< HEAD
 @import '../../components/toggler/toggler.css';
 @import '../../components/tabs/tabs.css';
 @import '../../components/tooltip/tooltip.css';
@@ -20,8 +18,8 @@
 @import '../../components/skeleton/skeleton.css';
 @import '../../components/input/input.css';
 @import '../../components/accordion/accordion.css';
-=======
->>>>>>> 9966ffd1b64321f458b61c4d0d192722f5a34475
+@import '../../components/sidebar/sideber.css';
+
 
 :root {
     --white: #ffffff;
