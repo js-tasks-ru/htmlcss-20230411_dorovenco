@@ -5,6 +5,7 @@
 @import '../../components/header/header.css';
 @import '../../components/card/card.css';
 @import '../../components/button/button.css';
+<<<<<<< HEAD
 @import '../../components/toggler/toggler.css';
 @import '../../components/tabs/tabs.css';
 @import '../../components/tooltip/tooltip.css';
@@ -18,6 +19,11 @@
 @import '../../components/input/input.css';
 @import '../../components/accordion/accordion.css';
 @import '../../components/sidebar/sidebar.css';
+=======
+@import '../../components/sidebar/sideber.css';
+@import '../../components/toggler/toggler.css';
+@import '../../components/modal/modal.css';
+>>>>>>> a1baae9a609cf84dff0698b285ca90adf05876cb
 
 :root {
     --white: #ffffff;
