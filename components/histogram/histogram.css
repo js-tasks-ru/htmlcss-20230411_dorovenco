@@ -1,4 +1,5 @@
 .histogram {
+	width: 100%;
 	border: 1px solid var(--grey-3);
 	border-radius: 8px;
 	padding: 16px 24px 24px;
@@ -44,6 +45,7 @@
     display: flex;
 	gap: 1px;
 	height: 50px;
+	animation: rising 0.5s ease-out;
 }
 
 .histogram__element {
@@ -52,8 +54,23 @@
 	height: 0%;
 	flex-basis: 9px;	
 	flex-grow: 1;
+	
 }
 
+@keyframes rising {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    50% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+    }
+}
 
 .histogram__element_mid {
 	height: 50%; 	
