@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/normalize.css">
+    <link rel="stylesheet" href="./../assets/css/main.css">
+    <link rel="stylesheet" href="./../assets/css/paraiso-dark.css">
+</head>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">
+                    <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="m0 1h30v30h-30z"></path>
+                            <rect height="32" rx="16" width="32" x="38"></rect>
+                            <path d="m78 0 32 32h-32z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__toggler">
+                <label class="toggler">
+                    <input type="checkbox" class="toggler__input" id="theme-changer">
+                    <diV class="toggler__state">
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#sun"></use>
+                        </svg>
+                        <div class="toggler__control">
+                            <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <rect width="24" height="24" rx="12" />
+                            </svg>
+                        </div>
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#moon"></use>
+                        </svg>
+                    </div>
+                </label>
+                </rect>
+        </header>
+        <main class="content content_grid-container">
+            <div class="sidebar">
+                <ul class="sidebar__menu">
+                    <h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/modal.html" class="sidebar__nav-link">Modal</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/tooltip.html" class="sidebar__nav-link">Tooltip</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/avatar.html" class="sidebar__nav-link">Avatar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/calendar.html" class="sidebar__nav-link">Calendar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/histogram.html" class="sidebar__nav-link">Histogram</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link sidebar__nav-item_active" href="/pages/form.html" class="sidebar__nav-link">Custom form elements</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/" class="sidebar__nav-link">Main page</a></li>
+                </ul>
+            </div>
+            <div class="content__inner content">
+                <h3>CUSTOM FORM ELEMENTS</h3>
+                <div style="display: grid; grid-template-columns: repeat(3, auto);grid-gap: 1rem;">
+                    <div class="form">
+                        <label class="form__label">focused</label>
+                        <div class="form__control">
+                            <input class="form__input" type="text" placeholder="Filled input" focus>
+                            <svg class="form__icon form__icon_success">
+                                <use href="../../assets/images/sprite.svg#success"></use>
+                            </svg>
+                            <svg class="form__icon form__icon_error">
+                                <use href="../../assets/images/sprite.svg#error"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form form_success">
+                        <label class="form__label">success</label>
+                        <div class="form__control">
+                            <input class="form__input" type="text" placeholder="Success">
+                            <svg class="form__icon form__icon_success">
+                                <use href="../../assets/images/sprite.svg#success"></use>
+                            </svg>
+                            <svg class="form__icon form__icon_error">
+                                <use href="../../assets/images/sprite.svg#error"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="form form_invalid">
+                        <label class="form__label">error</label>
+                        <div class="form__control">
+                            <input class="form__input" type="text" placeholder="Error">
+                            <svg class="form__icon form__icon_success">
+                                <use href="../../assets/images/sprite.svg#success"></use>
+                            </svg>
+                            <svg class="form__icon form__icon_error">
+                                <use href="../../assets/images/sprite.svg#error"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <div class="tabs__buttons">
+                        <button class="tab__link active" onclick="openTab(event, 'html')" id="defaultOpen">HTML</button>
+                        <button class="tab__link" onclick="openTab(event, 'css')" id="defaultOpen">CSS</button>
+                    </div>
+                    <div class="tabs__content">
+                        <div id="html" class="tab__element">
+                            <pre>
+                                <code data-language="html">
+<div style="display: grid; grid-template-columns: repeat(3, auto);grid-gap: 1rem;">
+    <div class="form">
+        <label class="form__label">focused</label>
+        <div class="form__control">
+            <input class="form__input" type="text" placeholder="Filled input" focus>
+            <svg class="form__icon form__icon_success">
+                <use href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="form__icon form__icon_error">
+                <use href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="form form_success">
+        <label class="form__label">success</label>
+        <div class="form__control">
+            <input class="form__input" type="text" placeholder="Success">
+            <svg class="form__icon form__icon_success">
+                <use href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="form__icon form__icon_error">
+                <use href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="form form_invalid">
+        <label class="form__label">error</label>
+        <div class="form__control">
+            <input class="form__input" type="text" placeholder="Error">
+            <svg class="form__icon form__icon_success">
+                <use href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="form__icon form__icon_error">
+                <use href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </div>
+</div>
+                                </code></pre>
+                        </div>
+                        <div id="css" class="tab__element">
+                            <pre>
+                                <code data-language="css">
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--grey-2);
+}
+
+.form__control {
+    min-height: 56px;
+    display: flex;
+    position: relative;
+}
+
+.form__label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}
+
+.form__input {
+    min-height: 56px;
+    padding-left: 24px;
+    flex-grow: 1;
+    box-sizing: border-box;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-4);
+}
+
+.form__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: none;
+}
+
+.form_invalid .form__input {
+    border: 1px solid var(--error);
+}
+
+.form_invalid .form__icon_error {
+    fill: var(--error);
+    display: block;
+}
+
+.form_success .form__icon_success {
+    fill: var(--primary);
+    display: block;
+}
+
+.form__input:focus {
+    outline: none;
+    border: 3px solid var(--primary);
+    transition: border 0.1s linear;
+}
+
+.form__input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-2);
+}
+                                </code> 
+                            </pre>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer_inner">
+            <h5 class="footer__title">Reusable component library</h5>
+        </footer>
+        </div>
+        <script src="./../assets/js/rainbow-custom.min.js"></script>
+        <script type="text/javascript">
+        function openTab(evt, tabName) {
+            var i, tabElement, tabLinks;
+
+            tabElement = document.getElementsByClassName("tab__element");
+
+            for (i = 0; i < tabElement.length; i++) {
+                tabElement[i].style.display = "none";
+            }
+
+            tabLinks = document.getElementsByClassName("tab__link");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script src="./../assets/js/theme-changer.js"></script>
+</body>
+
+</html>

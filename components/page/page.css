@@ -1,16 +1,26 @@
 .page {
 
-    color: var(--black);
-    font-family: Inter;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1440px;
+	color: var(--black);
+	background-color: var(--white);
+	font-family: Inter;	
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+}
+
+.page__header {
+	
+}
+
+.page__content {
+
+  
 }
 
 .page__footer {
 
-    width: 480px;
-    color: #212429;
-    font-family: Inter;
 }
+	color: #212429;
+	font-family: Inter;	
+}
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/normalize.css">
+    <link rel="stylesheet" href="./../assets/css/main.css">
+    <link rel="stylesheet" href="./../assets/css/paraiso-dark.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">
+                    <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="m0 1h30v30h-30z"></path>
+                            <rect height="32" rx="16" width="32" x="38"></rect>
+                            <path d="m78 0 32 32h-32z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__toggler">
+                <label class="toggler">
+                    <input type="checkbox" class="toggler__input" id="theme-changer">
+                    <diV class="toggler__state">
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#sun"></use>
+                        </svg>
+                        <div class="toggler__control">
+                            <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <rect width="24" height="24" rx="12" />
+                            </svg>
+                        </div>
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#moon"></use>
+                        </svg>
+                    </div>
+                </label>
+                </rect>
+        </header>
+        <main class="content content_grid-container">
+            <div class="sidebar">
+                <ul class="sidebar__menu">
+                    <h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/modal.html" class="sidebar__nav-link">Modal</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link sidebar__nav-item_active" href="/pages/tooltip.html" class="sidebar__nav-link">Tooltip</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/avatar.html" class="sidebar__nav-link">Avatar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/calendar.html" class="sidebar__nav-link">Calendar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/histogram.html" class="sidebar__nav-link">Histogram</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/form.html" class="sidebar__nav-link">Custom form elements</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/" class="sidebar__nav-link">Main page</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="content content__inner">
+                    <h1>Tooltip</h1>
+                    <div class="tooltip">
+                        <div class="tooltip__icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <svg class="svg-icon" viewBox="0 0 24 24">
+                                <use href="../../assets/images/sprite.svg#help"></use>
+                            </svg>
+                        </div>
+                        <div class="tooltip__bubble">Helper text</div>
+                    </div>
+                    <div class="tabs">
+                        <div class="tabs__buttons">
+                            <button class="tab__link active" onclick="openTab(event, 'html')" id="defaultOpen">HTML</button>
+                            <button class="tab__link" onclick="openTab(event, 'css')" id="defaultOpen">CSS</button>
+                        </div>
+                        <div class="tabs__content">
+                            <div id="html" class="tab__element">
+                                <pre>
+                                <code data-language="html">
+<div class="tooltip">
+    <div class="tooltip__icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <svg class="svg-icon" viewBox="0 0 24 24">
+            <use href="../../assets/images/sprite.svg#help"></use>
+        </svg>
+    </div>
+    <div class="tooltip__bubble tooltip_force-show-helper">Helper text</div>
+</div>
+                                </code></pre>
+                            </div>
+                            <div id="css" class="tab__element">
+                                <pre>
+                                <code data-language="css">
+.tooltip {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip__icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip__icon .svg-icon {
+    color: var(--primary);
+    fill: none;
+    width: 100%;
+    height: 100%;
+}
+
+.tooltip__bubble {
+    display: none;
+    text-align: center;
+    padding: 13px 21px 8px 13px;
+    color: var(--grey-2);
+    background: var(--primary);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.tooltip__bubble:before {
+    content: "";
+    border: 10px solid transparent;
+    border-top: 5px solid var(--primary);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tooltip__icon:hover~.tooltip__bubble {
+    display: block;
+}
+
+.tooltip_force-show-helper.tooltip__bubble{
+    display: block;
+}
+                                </code> 
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer_inner">
+            <h5 class="footer__title">Reusable component library</h5>
+        </footer>
+        </div>
+        <script src="./../assets/js/rainbow-custom.min.js"></script>
+        <script type="text/javascript">
+        function openTab(evt, tabName) {
+            var i, tabElement, tabLinks;
+
+            tabElement = document.getElementsByClassName("tab__element");
+
+            for (i = 0; i < tabElement.length; i++) {
+                tabElement[i].style.display = "none";
+            }
+
+            tabLinks = document.getElementsByClassName("tab__link");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script src="./../assets/js/theme-changer.js"></script>
+</body>
+
+</html>

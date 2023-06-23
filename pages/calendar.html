@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/normalize.css">
+    <link rel="stylesheet" href="./../assets/css/main.css">
+    <link rel="stylesheet" href="./../assets/css/paraiso-dark.css">
+</head>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__logo">
+                <a href="/">
+                    <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="m0 1h30v30h-30z"></path>
+                            <rect height="32" rx="16" width="32" x="38"></rect>
+                            <path d="m78 0 32 32h-32z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__toggler">
+                <label class="toggler">
+                    <input type="checkbox" class="toggler__input" id="theme-changer">
+                    <diV class="toggler__state">
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#sun"></use>
+                        </svg>
+                        <div class="toggler__control">
+                            <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <rect width="24" height="24" rx="12" />
+                            </svg>
+                        </div>
+                        <svg class="toggler__title" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <use href="../../assets/images/sprite.svg#moon"></use>
+                        </svg>
+                    </div>
+                </label>
+                </rect>
+        </header>
+        <main class="content content_grid-container">
+            <div class="sidebar">
+                <ul class="sidebar__menu">
+                    <h4 class="sidebar__title">Components</h4>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/modal.html" class="sidebar__nav-link">Modal</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/tooltip.html" class="sidebar__nav-link">Tooltip</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/avatar.html" class="sidebar__nav-link">Avatar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link sidebar__nav-item_active" href="/pages/calendar.html" class="sidebar__nav-link">Calendar</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/histogram.html" class="sidebar__nav-link">Histogram</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/pages/form.html" class="sidebar__nav-link">Custom form elements</a></li>
+                    <li class="sidebar__nav-item">
+                        <a class="sidebar__nav-link" href="/" class="sidebar__nav-link">Main page</a></li>
+                </ul>
+            </div>
+            <div class="content content__inner">
+                <h1>Calendar</h1>
+                 <div class="calendar">
+                                    <h3 class="calendar__title">October 2019</h3>
+                                    <div class="calendar__days">
+                                        <div class="calendar__day calendar__day_weekday">Mon</div>
+                                        <div class="calendar__day calendar__day_weekday">Tue</div>
+                                        <div class="calendar__day calendar__day_weekday">Wed</div>
+                                        <div class="calendar__day calendar__day_weekday">Thu</div>
+                                        <div class="calendar__day calendar__day_weekday">Fri</div>
+                                        <div class="calendar__day calendar__day_weekday">Sat</div>
+                                        <div class="calendar__day calendar__day_weekday">Sun</div>
+                                        <div class="calendar__day_blank"></div>
+                                        <div class="calendar__day_blank"></div>
+                                        <div class="calendar__day_blank"></div>
+                                        <div class="calendar__day_blank"></div>
+                                        <div class="calendar__day">1</div>
+                                        <div class="calendar__day">2</div>
+                                        <div class="calendar__day">3</div>
+                                        <div class="calendar__day">4</div>
+                                        <div class="calendar__day">5</div>
+                                        <div class="calendar__day">6</div>
+                                        <div class="calendar__day">7</div>
+                                        <div class="calendar__day">8</div>
+                                        <div class="calendar__day">9</div>
+                                        <div class="calendar__day">10</div>
+                                        <div class="calendar__day">11</div>
+                                        <div class="calendar__day">12</div>
+                                        <div class="calendar__day">13</div>
+                                        <div class="calendar__day">14</div>
+                                        <div class="calendar__day">15</div>
+                                        <div class="calendar__day">16</div>
+                                        <div class="calendar__day">17</div>
+                                        <div class="calendar__day calendar__day_end">18</div>
+                                        <div class="calendar__day calendar__day_mid">19</div>
+                                        <div class="calendar__day calendar__day_mid">20</div>
+                                        <div class="calendar__day calendar__day_mid">21</div>
+                                        <div class="calendar__day calendar__day_mid">22</div>
+                                        <div class="calendar__day calendar__day_end">23</div>
+                                        <div class="calendar__day">24</div>
+                                        <div class="calendar__day">25</div>
+                                        <div class="calendar__day">26</div>
+                                        <div class="calendar__day">27</div>
+                                        <div class="calendar__day">28</div>
+                                        <div class="calendar__day">29</div>
+                                        <div class="calendar__day">30</div>
+                                        <div class="calendar__day">31</div>
+                                    </div>
+                                </div>
+                
+                    <div class="tabs">
+                        <div class="tabs__buttons">
+                            <button class="tab__link active" onclick="openTab(event, 'html')" id="defaultOpen">HTML</button>
+                            <button class="tab__link" onclick="openTab(event, 'css')" id="defaultOpen">CSS</button>
+                        </div>
+                        <div class="tabs__content">
+                            <div id="html" class="tab__element">
+                                <pre>
+                                <code data-language="html">
+<div class="calendar">
+    <h3 class="calendar__title">October 2019</h3>
+    <div class="calendar__days">
+        <div class="calendar__day calendar__day_weekday">Mon</div>
+        <div class="calendar__day calendar__day_weekday">Tue</div>
+        <div class="calendar__day calendar__day_weekday">Wed</div>
+        <div class="calendar__day calendar__day_weekday">Thu</div>
+        <div class="calendar__day calendar__day_weekday">Fri</div>
+        <div class="calendar__day calendar__day_weekday">Sat</div>
+        <div class="calendar__day calendar__day_weekday">Sun</div>
+        <div class="calendar__day_blank"></div>
+        <div class="calendar__day_blank"></div>
+        <div class="calendar__day_blank"></div>
+        <div class="calendar__day_blank"></div>
+        <div class="calendar__day">1</div>
+        <div class="calendar__day">2</div>
+        <div class="calendar__day">3</div>
+        <div class="calendar__day">4</div>
+        <div class="calendar__day">5</div>
+        <div class="calendar__day">6</div>
+        <div class="calendar__day">7</div>
+        <div class="calendar__day">8</div>
+        <div class="calendar__day">9</div>
+        <div class="calendar__day">10</div>
+        <div class="calendar__day">11</div>
+        <div class="calendar__day">12</div>
+        <div class="calendar__day">13</div>
+        <div class="calendar__day">14</div>
+        <div class="calendar__day">15</div>
+        <div class="calendar__day">16</div>
+        <div class="calendar__day">17</div>
+        <div class="calendar__day calendar__day_end">18</div>
+        <div class="calendar__day calendar__day_mid">19</div>
+        <div class="calendar__day calendar__day_mid">20</div>
+        <div class="calendar__day calendar__day_mid">21</div>
+        <div class="calendar__day calendar__day_mid">22</div>
+        <div class="calendar__day calendar__day_end">23</div>
+        <div class="calendar__day">24</div>
+        <div class="calendar__day">25</div>
+        <div class="calendar__day">26</div>
+        <div class="calendar__day">27</div>
+        <div class="calendar__day">28</div>
+        <div class="calendar__day">29</div>
+        <div class="calendar__day">30</div>
+        <div class="calendar__day">31</div>
+    </div>
+</div>
+                                </code></pre>
+                            </div>
+                            <div id="css" class="tab__element">
+                                <pre>
+                                <code data-language="css">
+.calendar {
+    max-width: 300px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    background-color: var(--white);
+    padding: 28px 35px 40px;
+}
+
+.calendar__title {
+    text-align: center;
+    color: #334D6E;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.calendar__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar__day {
+    text-align: center;
+    padding: 9px;
+    color: #334D6E;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.calendar__day_blank {
+
+}
+
+.calendar__day_weekday {
+    color: #90A0B7;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.calendar__day_end {
+    color: var(--white);
+    background: #4263EB;
+}
+
+.calendar__day_mid {
+    background: rgba(160, 177, 245, 0.2);
+}
+
+.calendar_size_mini {
+    max-width: 200px;
+    width: 200px;
+    min-width: 75px;
+}
+
+.calendar_size_mini {
+    max-width: 200px;
+    width: 200px;
+    min-width: 75px;
+    padding: 7%;
+
+}
+
+.calendar_size_mini .calendar__day {
+    padding: 7%;
+    font-size: 9px;
+}
+
+.calendar_size_mini .calendar__title {
+    font-size: 14px;
+}
+                                </code> 
+                            </pre>
+                        </div>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer_inner">
+            <h5 class="footer__title">Reusable component library</h5>
+        </footer>
+        </div>
+        <script src="./../assets/js/rainbow-custom.min.js"></script>
+        <script type="text/javascript">
+        function openTab(evt, tabName) {
+            var i, tabElement, tabLinks;
+
+            tabElement = document.getElementsByClassName("tab__element");
+
+            for (i = 0; i < tabElement.length; i++) {
+                tabElement[i].style.display = "none";
+            }
+
+            tabLinks = document.getElementsByClassName("tab__link");
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+        </script>
+        <script src="./../assets/js/theme-changer.js"></script>
+</body>
+
+</html>
