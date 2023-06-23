@@ -3,16 +3,9 @@
 	justify-content: space-between;
 	padding: 25px 0;
 
-<<<<<<< HEAD
 	max-width: 1110px;
     width: 100%;
     margin: 0 auto;
-    /*padding: 0 16px*/
-=======
-    padding-top: 96px;
-    padding-left: 160px;
-    padding-bottom: 77px;
->>>>>>> 9966ffd1b64321f458b61c4d0d192722f5a34475
 }
 
 .header__title {
