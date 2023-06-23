@@ -4,3 +4,8 @@ node_modules
 package-lock.json
 yarn.lock
 .DS_Store
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/htmlcss-20230411_dorovenco/v17/.wsuo
+.vs/htmlcss-20230411_dorovenco/FileContentIndex/read.lock
+.vs/htmlcss-20230411_dorovenco/FileContentIndex/a3fff949-c601-42ca-ae8b-a6e8986f7894.vsidx

@@ -1,8 +1,11 @@
 .header {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 0;
 
-    padding-top: 96px;
-    padding-left: 160px;
-    padding-bottom: 77px;
+	max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header__title {
